@@ -1,0 +1,73 @@
+{
+  // Configure editor settings to be overridden for [markdown] language.
+  "[markdown]":  {
+    "files.trimTrailingWhitespace": false
+  },
+
+  // Controls the font size in pixels.
+  "editor.fontFamily": "'Fantasque Sans Mono'",
+
+  // Controls whether the minimap slider is automatically hidden.
+  "editor.minimap.showSlider": "always",
+
+  // Controls whether the editor should render control characters.
+  "editor.renderControlCharacters": true,
+
+  // Controls how the editor should render whitespace characters, possibilities
+  // are 'none', 'boundary', and 'all'. The 'boundary' option does not render
+  // single spaces between words.
+  "editor.renderWhitespace": "all",
+
+  // Columns at which to show vertical rulers.
+  "editor.rulers": [
+    80, // Soft limit
+    120 // Hard limit
+  ],
+
+  // Controls if the editor will scroll beyond the last line.
+  "editor.scrollBeyondLastLine": false,
+
+  // Number of editors shown in the Open Editors pane. Set it to 0 to hide the
+  // pane.
+  "explorer.openEditors.visible": 0,
+
+  // Controls auto save of dirty files. Accepted values:  'off', 'afterDelay',
+  // 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses
+  // focus). If set to 'afterDelay', you can configure the delay in
+  // 'files.autoSaveDelay'.
+  "files.autoSave": "onFocusChange",
+
+  // The default end of line character. Use \n for LF and \r\n for CRLF.
+  "files.eol": "\n",
+
+  // When enabled, insert a final new line at the end of the file when saving
+  // it.
+  "files.insertFinalNewline": true,
+
+  // Controls whether unsaved files are remembered between sessions, allowing
+  // the save prompt when exiting the editor to be skipped.
+  "files.hotExit": "onExitAndWindowClose",
+
+  // When enabled, will trim trailing whitespace when saving a file.
+  "files.trimTrailingWhitespace": true,
+
+  // Enable usage data and errors to be sent to Microsoft.
+  "telemetry.enableTelemetry": false,
+
+  // The path of the shell that the terminal uses on Windows. When using shells
+  // shipped with Windows (cmd, PowerShell or Bash on Ubuntu), prefer
+  // C:\Windows\sysnative over C:\Windows\System32 to use the 64-bit versions.
+  "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
+
+  // Specifies the color theme used in the workbench.
+  "workbench.colorTheme": "Monokai Dimmed",
+
+  // Controls which editor is shown at startup, if none is restored from the
+  // previous session. Select 'none' to start without an editor, 'welcomePage'
+  // to open the Welcome page (default), 'newUntitledFile' to open a new
+  // untitled file (only when not opening a folder).
+  "workbench.startupEditor": "none",
+
+  // When enabled, will show the watermark tips when no editor is open.
+  "workbench.tips.enabled": false
+}
