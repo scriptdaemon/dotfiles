@@ -1,0 +1,20 @@
+[user]
+  name = Kenneth Williams
+  email = scriptdaemon@users.noreply.github.com # Keep email private
+  signingkey = A2C21C347D41CD18
+
+[credential]
+  helper = store
+
+[gpg]
+  program = gpg2
+
+[commit]
+  gpgsign = true
+
+[url "https://github.com/"]
+  insteadOf = gh:
+  insteadOf = github:
+
+[url "https://gist.github.com/"]
+  insteadOf = gist:
