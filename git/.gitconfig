@@ -20,34 +20,52 @@
   rebase = true
 
 [alias]
+  # Alias
+  al = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort # Alias
+
+  # Branch
+  br = branch -avv                                                                        # Branch
+  brd = branch -D                                                                         # Branch delete
+  brn = rev-parse --abbrev-ref HEAD                                                       # Branch name
+
+  # Checkout
+  co = checkout                                                                           # Checkout
+  con = checkout -b                                                                       # Checkout new
+  coo = checkout --orphan                                                                 # Checkout orphan
+
   # Commit
-  ci = commit                                                 # Commit
-  cia = commit -a                                             # Commit all
-  ciada = !git add -A && git commit                           # Commit add all
-  ciadi = !git add -i && git commit                           # Commit add interactive
-  cii = commit -m 'Initial commit' --allow-empty              # Commit initial
-  am = commit --amend                                         # Amend
-  ama = commit -a --amend                                     # Amend all
-  amada = !git add -A && git commit --amend                   # Amend add all
-  amadi = !git add -i && git commit --amend                   # Amend add interactive
+  ci = commit                                                                             # Commit
+  cia = commit -a                                                                         # Commit all
+  ciada = !git add -A && git commit                                                       # Commit add all
+  ciadi = !git add -i && git commit                                                       # Commit add interactive
+  cii = commit -m 'Initial commit' --allow-empty                                          # Commit initial
+  am = commit --amend                                                                     # Amend
+  ama = commit -a --amend                                                                 # Amend all
+  amada = !git add -A && git commit --amend                                               # Amend add all
+  amadi = !git add -i && git commit --amend                                               # Amend add interactive
 
   # Merge
-  mg = merge --ff-only                                        # Merge
+  mg = merge --ff-only                                                                    # Merge
 
   # Pull
-  pl = pull                                                   # Pull
-  plo = pull origin HEAD                                      # Pull 'origin'
-  plu = pull upstream HEAD                                    # Pull 'upstream'
+  pl = pull                                                                               # Pull
+  plo = pull origin HEAD                                                                  # Pull 'origin'
+  plu = pull upstream HEAD                                                                # Pull 'upstream'
 
   # Push
-  ps = push                                                   # Push
-  pso = push origin HEAD                                      # Push 'origin'
-  psu = push upstream HEAD                                    # Push 'upstream'
+  ps = push                                                                               # Push
+  pso = push origin HEAD                                                                  # Push 'origin'
+  psu = push upstream HEAD                                                                # Push 'upstream'
+
+  # Remote
+  rt = remote -v                                                                          # Remote
+  rta = remote add                                                                        # Remote add
+  rtd = remote remove                                                                     # Remote delete
 
   # Stage
-  sg = add                                                    # Stage
-  sga = add -A                                                # Stage all
-  sgi = add -i                                                # Stage interactive
+  sg = add                                                                                # Stage
+  sga = add -A                                                                            # Stage all
+  sgi = add -i                                                                            # Stage interactive
 
 [url "https://github.com/"]
   insteadOf = gh:
