@@ -57,6 +57,14 @@
   pso = push origin HEAD                                                                  # Push 'origin'
   psu = push upstream HEAD                                                                # Push 'upstream'
 
+  # Rebase
+  rb = rebase                                                                             # Rebase
+  rba = rebase --abort                                                                    # Rebase abort
+  rbc = rebase --continue                                                                 # Rebase continue
+  rbi = rebase -i                                                                         # Rebase interactive
+  rbs = rebase --skip                                                                     # Rebase skip
+  rd = rebase -i @{u}                                                                     # Ready
+
   # Remote
   rt = remote -v                                                                          # Remote
   rta = remote add                                                                        # Remote add
