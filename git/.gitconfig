@@ -75,6 +75,17 @@
   sga = add -A                                                                            # Stage all
   sgi = add -i                                                                            # Stage interactive
 
+  # Stash
+  sh = stash                                                                              # Stash
+  sha = stash apply                                                                       # Stash apply
+  shb = stash branch                                                                      # Stash branch
+  shd = stash drop                                                                        # Stash delete
+  shl = stash list                                                                        # Stash list
+  shs = stash show -p                                                                     # Stash show
+  shu = "!f() { git stash show -p $@ | git apply -R }; f"                                 # Stash unapply
+  ss = !git stash save "snapshot: $(date)" && git stash apply stash@{0}                   # Snapshot
+  ssl = stash list --grep=snapshot                                                        # Snapshot list
+
 [url "https://github.com/"]
   insteadOf = gh:
   insteadOf = github:
