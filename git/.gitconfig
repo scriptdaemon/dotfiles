@@ -9,6 +9,9 @@
 [gpg]
   program = gpg2
 
+[pretty]
+  custom = %Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%aN>%Creset
+
 [commit]
   gpgsign = true
   verbose = true
@@ -43,6 +46,15 @@
   ama = commit -a --amend                                                                 # Amend all
   amada = !git add -A && git commit --amend                                               # Amend add all
   amadi = !git add -i && git commit --amend                                               # Amend add interactive
+
+  # Diff
+  df = diff                                                                               # Diff
+  dfb = diff master...HEAD                                                                # Diff branch
+  dfs = diff --staged                                                                     # Diff staged
+
+  # Log
+  lg = log --stat                                                                         # Log
+  lgg = log --graph --pretty=custom                                                       # Log graph
 
   # Merge
   mg = merge --ff-only                                                                    # Merge
@@ -85,6 +97,9 @@
   shu = "!f() { git stash show -p $@ | git apply -R }; f"                                 # Stash unapply
   ss = !git stash save "snapshot: $(date)" && git stash apply stash@{0}                   # Snapshot
   ssl = stash list --grep=snapshot                                                        # Snapshot list
+
+  # Status
+  st = status -bs                                                                         # Status
 
 [url "https://github.com/"]
   insteadOf = gh:
