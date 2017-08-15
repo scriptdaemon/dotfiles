@@ -36,6 +36,10 @@
   con = checkout -b                                                                       # Checkout new
   coo = checkout --orphan                                                                 # Checkout orphan
 
+  # Clean
+  nk = !git clean -df && git submodule foreach git clean -df                              # Nuke
+  nka = !git clean -dfx && git submodule foreach git clean -dfx                           # Nuke all
+
   # Commit
   ci = commit                                                                             # Commit
   cia = commit -a                                                                         # Commit all
@@ -81,6 +85,13 @@
   rt = remote -v                                                                          # Remote
   rta = remote add                                                                        # Remote add
   rtd = remote remove                                                                     # Remote delete
+
+  # Reset
+  rs = reset                                                                              # Reset
+  rsc = reset --soft HEAD^                                                                # Reset commit
+  rss = reset HEAD                                                                        # Reset staged
+  dc = reset --hard HEAD                                                                  # Discard
+  wp = !git add -A && git commit -qm '[wiped]' && git reset --hard HEAD^                  # Wipe
 
   # Stage
   sg = add                                                                                # Stage
