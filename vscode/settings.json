@@ -4,10 +4,11 @@
     "files.trimTrailingWhitespace": false
   },
 
-  // Controls the font size in pixels.
+  // Controls the font family.
   "editor.fontFamily": "'Fantasque Sans Mono'",
 
-  // Controls whether the minimap slider is automatically hidden.
+  // Controls whether the minimap slider is automatically hidden. Possible
+  // values are 'always' and 'mouseover'.
   "editor.minimap.showSlider": "always",
 
   // Controls whether the editor should render control characters.
@@ -18,7 +19,8 @@
   // single spaces between words.
   "editor.renderWhitespace": "all",
 
-  // Columns at which to show vertical rulers.
+  // Controls whether the minimap slider is automatically hidden. Possible
+  // values are 'always' and 'mouseover'.
   "editor.rulers": [
     80, // Soft limit
     120 // Hard limit
@@ -65,7 +67,7 @@
   // Controls which editor is shown at startup, if none is restored from the
   // previous session. Select 'none' to start without an editor, 'welcomePage'
   // to open the Welcome page (default), 'newUntitledFile' to open a new
-  // untitled file (only when not opening a folder).
+  // untitled file (only opening an empty workspace).
   "workbench.startupEditor": "none",
 
   // When enabled, will show the watermark tips when no editor is open.
