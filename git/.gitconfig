@@ -29,7 +29,6 @@
   # Branch
   br = branch -avv                                                                        # Branch
   brd = branch -D                                                                         # Branch delete
-  brn = rev-parse --abbrev-ref HEAD                                                       # Branch name
 
   # Checkout
   co = checkout                                                                           # Checkout
