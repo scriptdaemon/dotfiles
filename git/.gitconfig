@@ -92,11 +92,6 @@
   rss = reset HEAD                                                                        # Reset staged
   wp = !git add -A && git commit -qm '[wiped]' && git reset --hard HEAD^                  # Wipe
 
-  # Stage
-  sg = add                                                                                # Stage
-  sga = add -A                                                                            # Stage all
-  sgi = add -i                                                                            # Stage interactive
-
   # Stash
   sh = stash                                                                              # Stash
   sha = stash apply                                                                       # Stash apply
