@@ -29,6 +29,12 @@
   // Controls if the editor will scroll beyond the last line.
   "editor.scrollBeyondLastLine": false,
 
+  // An array of language ids which should be validated by ESLint.
+  "eslint.validate": [
+    "javascript",
+    "vue"
+  ],
+
   // Number of editors shown in the Open Editors pane. Set it to 0 to hide the
   // pane.
   "explorer.openEditors.visible": 0,
