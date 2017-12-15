@@ -32,7 +32,8 @@
   // An array of language ids which should be validated by ESLint.
   "eslint.validate": [
     "javascript",
-    "vue"
+    "vue",
+    "vue-html"
   ],
 
   // Number of editors shown in the Open Editors pane. Set it to 0 to hide the
