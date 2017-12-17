@@ -23,87 +23,84 @@
   rebase = true
 
 [alias]
-  # Alias
-  al = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort # Alias
-
   # Branch
-  br = branch -avv                                                                        # Branch
-  brd = branch -D                                                                         # Branch delete
+  br = branch -avv                                                       # Branch
+  brd = branch -D                                                        # Branch delete
 
   # Checkout
-  co = checkout                                                                           # Checkout
-  con = checkout -b                                                                       # Checkout new
-  coo = checkout --orphan                                                                 # Checkout orphan
+  co = checkout                                                          # Checkout
+  con = checkout -b                                                      # Checkout new
+  coo = checkout --orphan                                                # Checkout orphan
 
   # Clean
-  nk = !git clean -df && git submodule foreach git clean -df                              # Nuke
-  nka = !git clean -dfx && git submodule foreach git clean -dfx                           # Nuke all
+  nk = !git clean -df && git submodule foreach git clean -df             # Nuke
+  nka = !git clean -dfx && git submodule foreach git clean -dfx          # Nuke all
 
   # Commit
-  ci = commit                                                                             # Commit
-  cia = commit -a                                                                         # Commit all
-  ciada = !git add -A && git commit                                                       # Commit add all
-  ciadi = !git add -i && git commit                                                       # Commit add interactive
-  cii = commit -m 'Initial commit' --allow-empty                                          # Commit initial
-  am = commit --amend                                                                     # Amend
-  ama = commit -a --amend                                                                 # Amend all
-  amada = !git add -A && git commit --amend                                               # Amend add all
-  amadi = !git add -i && git commit --amend                                               # Amend add interactive
+  ci = commit                                                            # Commit
+  cia = commit -a                                                        # Commit all
+  ciada = !git add -A && git commit                                      # Commit add all
+  ciadi = !git add -i && git commit                                      # Commit add interactive
+  cii = commit -m 'Initial commit' --allow-empty                         # Commit initial
+  am = commit --amend                                                    # Amend
+  ama = commit -a --amend                                                # Amend all
+  amada = !git add -A && git commit --amend                              # Amend add all
+  amadi = !git add -i && git commit --amend                              # Amend add interactive
 
   # Diff
-  df = diff                                                                               # Diff
-  dfb = diff master...HEAD                                                                # Diff branch
-  dfs = diff --staged                                                                     # Diff staged
+  df = diff                                                              # Diff
+  dfb = diff master...HEAD                                               # Diff branch
+  dfs = diff --staged                                                    # Diff staged
 
   # Log
-  lg = log --stat                                                                         # Log
-  lgg = log --graph --pretty=custom                                                       # Log graph
+  lg = log --stat                                                        # Log
+  lgg = log --graph --pretty=custom                                      # Log graph
 
   # Merge
-  mg = merge --ff-only                                                                    # Merge
+  mg = merge --ff-only                                                   # Merge
 
   # Pull
-  pl = pull                                                                               # Pull
-  plo = pull origin HEAD                                                                  # Pull 'origin'
-  plu = pull upstream HEAD                                                                # Pull 'upstream'
+  pl = pull                                                              # Pull
+  plo = pull origin HEAD                                                 # Pull 'origin'
+  plu = pull upstream HEAD                                               # Pull 'upstream'
 
   # Push
-  ps = push                                                                               # Push
-  pso = push origin HEAD                                                                  # Push 'origin'
-  psu = push upstream HEAD                                                                # Push 'upstream'
+  ps = push                                                              # Push
+  pso = push origin HEAD                                                 # Push 'origin'
+  psu = push upstream HEAD                                               # Push 'upstream'
 
   # Rebase
-  rb = rebase                                                                             # Rebase
-  rba = rebase --abort                                                                    # Rebase abort
-  rbc = rebase --continue                                                                 # Rebase continue
-  rbi = rebase -i                                                                         # Rebase interactive
-  rbs = rebase --skip                                                                     # Rebase skip
-  rd = rebase -i @{u}                                                                     # Ready
+  rb = rebase                                                            # Rebase
+  rba = rebase --abort                                                   # Rebase abort
+  rbc = rebase --continue                                                # Rebase continue
+  rbi = rebase -i                                                        # Rebase interactive
+  rbs = rebase --skip                                                    # Rebase skip
+  rd = rebase -i @{u}                                                    # Ready
 
   # Remote
-  rt = remote -v                                                                          # Remote
-  rta = remote add                                                                        # Remote add
-  rtd = remote remove                                                                     # Remote delete
+  rt = remote -v                                                         # Remote
+  rta = remote add                                                       # Remote add
+  rtd = remote remove                                                    # Remote delete
 
   # Reset
-  rs = reset                                                                              # Reset
-  rsc = reset --soft HEAD^                                                                # Reset commit
-  rss = reset HEAD                                                                        # Reset staged
-  wp = !git add -A && git commit -qm '[wiped]' && git reset --hard HEAD^                  # Wipe
+  rs = reset                                                             # Reset
+  rsc = reset --soft HEAD^                                               # Reset commit
+  rss = reset HEAD                                                       # Reset staged
+  wp = !git add -A && git commit -qm '[wiped]' && git reset --hard HEAD^ # Wipe
 
   # Stash
-  sh = stash                                                                              # Stash
-  sha = stash apply                                                                       # Stash apply
-  shb = stash branch                                                                      # Stash branch
-  shd = stash drop                                                                        # Stash delete
-  shl = stash list                                                                        # Stash list
-  shs = stash show -p                                                                     # Stash show
-  shu = "!f() { git stash show -p $@ | git apply -R }; f"                                 # Stash unapply
-  ss = !git stash save "snapshot: $(date)" && git stash apply stash@{0}                   # Snapshot
-  ssl = stash list --grep=snapshot                                                        # Snapshot list
+  sh = stash                                                             # Stash
+  sha = stash apply                                                      # Stash apply
+  shb = stash branch                                                     # Stash branch
+  shd = stash drop                                                       # Stash delete
+  shl = stash list                                                       # Stash list
+  shs = stash show -p                                                    # Stash show
+  shu = "!f() { git stash show -p $@ | git apply -R }; f"                # Stash unapply
+  ss = !git stash save "snapshot: $(date)" && git stash apply stash@{0}  # Snapshot
+  ssl = stash list --grep=snapshot                                       # Snapshot list
 
   # Status
-  st = status -bs                                                                         # Status
+  st = status -bs                                                        # Status
 
 [url "https://github.com/"]
   insteadOf = gh:
