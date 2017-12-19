@@ -3,3 +3,6 @@
 # shell starts, then the shell will use vi emulation - insert mode.
 export EDITOR=nvim
 export VISUAL=nvim
+
+# Set GPG TTY so Curses-based pin entry works.
+export GPG_TTY=$(tty)
