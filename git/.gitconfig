@@ -1,7 +1,7 @@
 [user]
   name = Kenneth Williams
   email = scriptdaemon@users.noreply.github.com # Keep email private
-  signingkey = C1859BF71252D3CE
+  signingkey = 3E0C90A9FCFE779E
 
 [credential]
   helper = store
