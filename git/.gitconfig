@@ -40,12 +40,12 @@
   # Commit
   ci = commit                                                            # Commit
   cia = commit -a                                                        # Commit all
-  ciada = !git add -A && git commit                                      # Commit add all
+  ciada = !git add -Av && git commit                                     # Commit add all
   ciadi = !git add -i && git commit                                      # Commit add interactive
   cii = commit -m 'Initial commit' --allow-empty                         # Commit initial
   am = commit --amend                                                    # Amend
   ama = commit -a --amend                                                # Amend all
-  amada = !git add -A && git commit --amend                              # Amend add all
+  amada = !git add -Av && git commit --amend                             # Amend add all
   amadi = !git add -i && git commit --amend                              # Amend add interactive
 
   # Diff
