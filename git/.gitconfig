@@ -29,6 +29,7 @@
 
   # Checkout
   co = checkout                                                          # Checkout
+  com = checkout master                                                  # Checkout master
   con = checkout -b                                                      # Checkout new
   coo = checkout --orphan                                                # Checkout orphan
 
