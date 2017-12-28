@@ -81,6 +81,8 @@
   # Remote
   rt = remote -v                                                         # Remote
   rta = remote add                                                       # Remote add
+  rtao = remote add origin                                               # Remote add 'origin'
+  rtau = remote add upstream                                             # Remote add 'upstream'
   rtd = remote remove                                                    # Remote delete
 
   # Reset
