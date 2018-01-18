@@ -68,6 +68,9 @@
   // C:\Windows\sysnative over C:\Windows\System32 to use the 64-bit versions.
   "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\wsl.exe",
 
+  // Validate vue-html in <template> using eslint-plugin-vue.
+  "vetur.validation.template": false,
+
   // Specifies the color theme used in the workbench.
   "workbench.colorTheme": "Monokai Dimmed",
 
