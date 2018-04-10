@@ -1,0 +1,12 @@
+[
+  {
+    "key": "ctrl+down",
+    "command": "workbench.action.terminal.scrollToNextCommand",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.terminal.scrollToPreviousCommand",
+    "when": "terminalFocus"
+  }
+]
