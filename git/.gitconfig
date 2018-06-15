@@ -57,6 +57,11 @@
   dfb = diff master...HEAD                                               # Diff branch
   dfs = diff --staged                                                    # Diff staged
 
+  # Fetch
+  fe = fetch                                                             # Fetch
+  feo = fetch origin                                                     # Fetch 'origin'
+  feu = fetch upstream                                                   # Fetch 'upstream'
+
   # Log
   lg = log --stat                                                        # Log
   lgg = log --graph --pretty=custom                                      # Log graph
