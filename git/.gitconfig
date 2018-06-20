@@ -1,7 +1,7 @@
 [user]
   name = Kenneth Williams
   email = scriptdaemon@gmail.com
-  signingkey = 3E0C90A9FCFE779E
+  signingkey = C5416BD068DA4734
 
 [credential]
   helper = store
