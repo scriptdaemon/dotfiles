@@ -60,6 +60,9 @@
   // When enabled, will trim trailing whitespace when saving a file.
   "files.trimTrailingWhitespace": true,
 
+  // Whether auto fetching is enabled.
+  "git.autofetch": false,
+
   // Enable usage data and errors to be sent to Microsoft.
   "telemetry.enableTelemetry": false,
 
